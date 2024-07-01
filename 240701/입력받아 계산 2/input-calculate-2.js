@@ -1,12 +1,8 @@
-const fs = require('fs');
-let a = fs.readFileSync(0).toString().split(" ");
+const fs = require("fs");
+let input = fs.readFileSync(0).toString();
+let arr = input.split(" ");
 
+let a = Number(arr[0]);
+let b = Number(arr[1]);
 
-let num1  = Number(a[0]);
-let num2 = Number(a[1]);
-
-function multiflyNum(num1, num2){
-    return num1 * num2
-}
-
-console.log(multiflyNum(num1,num2))
+console.log(a*b);
